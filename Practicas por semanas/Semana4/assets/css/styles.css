@@ -1,0 +1,130 @@
+/* Estilos base y estructura */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../fondo.png");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Centrado principal */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+
+.content-1 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("../Logo.png"); /* ajusta si el path está incorrecto */
+    background-size: cover; /* o usa 'contain' si prefieres que no se recorte */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+.Olvidaste {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.Olvidaste a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.Olvidaste a:hover {
+    text-decoration: underline;
+}
+
+button.iniciar {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.iniciar:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 800px) {
+
+    /* La estructura cambia para dispositivos móviles */
+    .container {
+        flex-direction: column;
+        /* Coloca los elementos en columna */
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 0 1 auto;
+    }
+
+    .content {
+        flex: 0 1 100%;
+        /* Hace que el contenido ocupe todo el ancho */
+    }
+
+    .content-1, {
+        flex: 1 1 100%;
+        /* Las columnas ocupan el 100% del ancho en dispositivos móviles */
+    }
+
+    .extra {
+        flex: 1 1 auto;
+    }
+
+}

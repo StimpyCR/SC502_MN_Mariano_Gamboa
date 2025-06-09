@@ -1,0 +1,82 @@
+body{
+background-color: blanchedalmond;
+display: flex;
+flex-direction: column;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+strong{
+    color: gray;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.info{
+background-color: whitesmoke;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+margin: 100px;
+
+border-radius: 20px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.reseñas{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.refe {
+  background-color: whitesmoke;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button{
+background-color: rgb(21, 120, 233);
+color: white;
+width: 125px;
+height: 30px;
+border-radius: 5px;
+
+}
+
+
+
