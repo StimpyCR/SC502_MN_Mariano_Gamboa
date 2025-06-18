@@ -17,6 +17,7 @@ h2 {
 /* Centrado principal */
 .content {
     display: flex;
+    background-size: contain;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -25,24 +26,27 @@ h2 {
 
 
 .content-1 {
+
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 
 .logo {
-    width: 80px;
-    height: 80px;
-    background-image: url("../Logo.png"); /* ajusta si el path está incorrecto */
-    background-size: cover; /* o usa 'contain' si prefieres que no se recorte */
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-image: url("../Logo.png"); 
+    background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 0 auto 20px auto;
 }
 
@@ -55,9 +59,10 @@ h2 {
 
 .login input[type="text"],
 .login input[type="password"] {
+    max-width: 375px;
     width: 100%;
     padding: 10px;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 15px ;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
@@ -73,6 +78,7 @@ h2 {
     color: #007BFF;
     text-decoration: none;
     font-size: 14px;
+
 }
 
 .Olvidaste a:hover {
@@ -88,43 +94,8 @@ button.iniciar {
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button.iniciar:hover {
     background-color: #0056b3;
-}
-
-
-/* Estilos Responsivos */
-@media (max-width: 800px) {
-
-    /* La estructura cambia para dispositivos móviles */
-    .container {
-        flex-direction: column;
-        /* Coloca los elementos en columna */
-    }
-
-    .column {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        flex: 0 1 auto;
-    }
-
-    .content {
-        flex: 0 1 100%;
-        /* Hace que el contenido ocupe todo el ancho */
-    }
-
-    .content-1, {
-        flex: 1 1 100%;
-        /* Las columnas ocupan el 100% del ancho en dispositivos móviles */
-    }
-
-    .extra {
-        flex: 1 1 auto;
-    }
-
 }
